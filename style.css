@@ -11,6 +11,9 @@
 
 .container2 {
     background-color: white;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
 }
 
 .info {
@@ -65,7 +68,7 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .navlist{
@@ -73,9 +76,11 @@
     font-size: 14px;
     display: flex;
     /* width: 60%; */
+    align-items: center;
     justify-content: space-between;
+    gap: 35px;
+    margin-right: 20px;
     list-style: none;
-    border: 1px solid blue;
 }
 .navvv{
     display: flex;
