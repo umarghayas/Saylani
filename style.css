@@ -15,7 +15,8 @@
     top: 0px;
     z-index: 100;
 }
-.container3{
+
+.container3 {
     width: 69%;
     margin: 0 auto;
     z-index: 0;
@@ -76,7 +77,7 @@
     /* border: 1px solid red; */
 }
 
-.navlist{
+.navlist {
     color: #666671;
     font-size: 14px;
     display: flex;
@@ -87,13 +88,16 @@
     margin-right: 20px;
     list-style: none;
 }
-.navvv{
+
+.navvv {
     display: flex;
 }
+
 .navbar img {
     width: 200px;
 }
-.navbar button{
+
+.navbar button {
     text-transform: uppercase;
     font-size: 12px;
     color: white;
@@ -102,52 +106,68 @@
     padding: 10px 30px;
     border: 1px solid #0d6db7;
 }
-.donate{
+
+.donate {
     background-color: #0d6db7;
 }
-.spnsr{
+
+.spnsr {
     background-color: #8dc63f;
 }
-.section1{ 
+
+.section1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url(./images/carousal_background.d77d94e41c5a71ae581f.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     /* width: 100%; */
 
 }
-.section1 img{
+
+.section1 img {
     height: 520px;
 }
-.text{
+
+.text {
     width: 48%;
 }
-h1{
+
+h1 {
     font-size: 38px;
     font-weight: 500;
 }
-h2{
+
+h2 {
     font-weight: 500;
     font-size: 24px;
 }
-.greentheme{
+
+.greentheme {
     color: #a0cf5f;
 }
-.bluetheme{
+
+.bluetheme {
     color: #0d6db7;
 }
-.text h1{
+
+.text h1 {
     color: #262626;
     margin-bottom: 19px;
 }
-.text h2{
-    margin: 28.8px  0 12px;
+
+.text h2 {
+    margin: 28.8px 0 12px;
 }
-.text p{
+
+.text p {
     text-align: justify;
     color: rgba(0, 0, 0, 0.85);
     margin-bottom: 16px;
 }
-.text button{
+
+.text button {
     border-radius: 7px;
     width: 190px;
     border: 1px solid black;
@@ -161,29 +181,162 @@ h2{
     background-repeat: no-repeat;
 
 }
-.section2 button{
-    /* padding: 16px 32px; */
-    border: 7px;
+
+.buttons button {
+    padding: 16px 32px;
+    /* border: 1px solid black; */
+    border: none;
     font-weight: 500;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 10px;
 }
-.section2{
+
+.section2 {
     display: flex;
+    justify-content: space-between;
     padding: 30px;
-    margin-top: 20px;
+    margin-top: 40px;
+    font-size: 14px;
     background-color: #f0fcdb;
     width: 100%;
     border: none;
+    gap: 25px;
     border-radius: 8px;
 }
-#dnt{
+
+#dnt {
     background-color: #a0cf5f;
+    color: white;
 }
-#general{
+
+#general {
     width: 315px;
+    height: 50px;
+    color: white;
+    border-radius: 8px;
     background-color: #424242;
+    border: none;
 }
-#gendnt{
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.buttons button {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #424242;
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+}
+
+#gendnt {
     height: 100%;
+    padding: 15px;
+    /* border: 1px solid black; */
+}
+
+#gendnt:focus {
+    outline: none;
+}
+
+#general span:first-of-type {
+    position: relative;
+    right: 15px;
+}
+
+#general span:last-of-type {
+    position: relative;
+    left: 15px;
+}
+
+.thalassemia {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.section3 p {
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.services {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 20px 0;
+    /* border: 2px solid green; */
+    width: 100%;
+}
+
+.services>div:first-of-type {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+    justify-content: space-between;
+}
+
+.servicebox {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0fcdb;
+    width: 196px;
+    height: 152px;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.servicebox:hover {
+    transform: scale(1.1);
+}
+
+.fundbox {
+    position: relative;
+    width: 415px;
+    height: 300px;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: white;
+    padding-left: 15px ;
+    border-radius: 10px;
+    background-color: #666671;
+}
+
+.fundbox button {
+    width: 90%;
+    border: none;
+    background-color: #8dc63f;
+    color: white;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#fund1 {
+    background-image: url(./images/waterplant.jpg);
+    background-size: contain;
+    background-position: center;
 }
