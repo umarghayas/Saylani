@@ -549,23 +549,23 @@ h2 {
 .contentfoot {
     padding-top: 30px;
     width: 69%;
+    height: 280px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.contentfoot>div {
+.contentfoot>div:first-child {
     display: flex;
     align-items: flex-start;
-    border: 1px solid orange;
+    flex-direction: column;
+    padding-left: 10px;
 }
 
 .contentfoot .saylanilogo {
     width: 300px;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    flex-basis: auto;
-    flex: 1;
+    margin-bottom: 30px;
 }
 
 .footnav {
@@ -573,12 +573,9 @@ h2 {
     width: 65%;
     gap: 50px;
     justify-content: flex-start;
-    /* flex-direction: column; */
-
 }
 
 .footnav>div {
-    background-color: aqua;
     height: 300px;
     width: 250px;
     color: white;
@@ -586,14 +583,41 @@ h2 {
 
 #twitter {
     width: 50px;
+    background-color: #50bac3;
+    border-radius: 15%;
 }
 
 #youtube {
     width: 50px;
-
+    background-color: #e36955;
+    border-radius: 15%;
 }
 
 #fb {
     width: 50px;
+    border-radius: 15%;
+}
 
+.footer ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.footnav li {
+    padding: 5px 0;
+}
+
+.footnav span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.overlay2 {
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.end {
+    height: 75px;
+    padding-top: 20px;
 }
