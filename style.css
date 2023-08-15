@@ -326,6 +326,7 @@ h2 {
     transform: scale(1.1);
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.5);
 }
+
 .fundbox button {
     width: 98%;
     border: none;
@@ -372,26 +373,227 @@ h2 {
 .overlay span {
     font-weight: 600;
 }
-.image{
-    border-top-left-radius: 15%;
+
+.image {
+    border-top-left-radius: 10%;
     overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 497px;
 }
-.otherproject{
+
+.image div {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: #8dc63f;
+    top: 0;
+}
+
+.image h1 {
+    font-size: 24px;
+    font-weight: 600;
+    width: 50%;
+    position: inherit;
+    top: 10%;
+    right: 25%;
+}
+
+.otherproject {
     margin: 20px 0;
+    gap: 20px;
     display: flex;
     justify-content: space-between;
 }
-.otherproject h3{
+
+.otherproject h3 {
     font-size: 30px;
+    font-weight: 500;
 }
-.otherproject h5{
+
+.otherproject h5 {
     color: #0d6db7;
     font-size: 16px;
+    font-weight: 600;
 }
-.otherproject p{
+
+.otherproject p {
     font-size: 14px;
     text-align: left;
+    font-weight: 400;
 }
-.pjttext{
+
+.pjttext {
     width: 50%;
+}
+
+.pjttext>div {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0 5% 0;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.pjttext img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+    box-sizing: content-box;
+    background-color: #eeeeee;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.section4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: 20px 0;
+    height: 517px;
+    width: 100%;
+    background-color: #0d6db7;
+    background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section4 h3 {
+    font-size: 24px;
+}
+
+.section4 p {
+    font-size: 15px;
+}
+
+.section4 img {
+    box-sizing: content-box;
+    background-color: white;
+    border-radius: 50%;
+    overflow: visible;
+    padding: 30px;
+}
+
+.section4>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.testimonials {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.testimonials>p {
+    color: #8dc63f;
+    font-size: 16px;
+}
+
+.testimonials>h2 {
+    color: #262626;
+    font-weight: 600;
+}
+
+.director {
+    height: 440px;
+    background-color: #eeeeee;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.director img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.director p {
+    width: 90%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.25;
+}
+
+.director h3 {
+    color: #0d6db7;
+    font-weight: 600;
+}
+
+.footer {
+    height: 355px;
+    width: 100%;
+    background-color: #424242;
+    margin-top: 50px;
+    background-image: url(./images/upcoming_background.a669f19ea2aee3c7e10f.png);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contentfoot {
+    padding-top: 30px;
+    width: 69%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.contentfoot>div {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid orange;
+}
+
+.contentfoot .saylanilogo {
+    width: 300px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: auto;
+    flex: 1;
+}
+
+.footnav {
+    display: flex;
+    width: 65%;
+    gap: 50px;
+    justify-content: flex-start;
+    /* flex-direction: column; */
+
+}
+
+.footnav>div {
+    background-color: aqua;
+    height: 300px;
+    width: 250px;
+    color: white;
+}
+
+#twitter {
+    width: 50px;
+}
+
+#youtube {
+    width: 50px;
+
+}
+
+#fb {
+    width: 50px;
+
 }
